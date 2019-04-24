@@ -12,12 +12,19 @@ public class CompteCourant {
         this.intitule = intitule;
         this.solde = solde;
         this.montantDecouvertAutorise = montantDecouvertAutorise;
-        nbComptesCourants += 2;
+        nbComptesCourants += 1;
     }
 
 
+    public void crediter(double amount) {
+        this.solde += amount;
+    }
 
+    public void debiter(double amount) {
+        this.solde -= amount;
+    }
 
-
-
+    public String toString() {
+        return "Le compte numéro : " + this.numero + " de " + this.intitule + " s'élève à un montant de : " + this.solde + " et ne doit pas dépasser un découvert de : " + this.montantDecouvertAutorise;
+    }
 }
