@@ -35,7 +35,17 @@ class TestCompteCourant {
         compteCourant3.debiter(500.0);
         assertEquals(25500.35, compteCourant3.solde, "Le solde après avoir débité " + compteCourant3.intitule + " n'est pas le bon.");
         System.out.println(compteCourant3.toString());
+
+
+        CompteCourant compteCourant4 = new CompteCourant("86623247", "Michael Jordan-Is-Poor", -10.50, 150.0);
+        assertEquals(0, compteCourant4.solde, "Nous avons un problêlme avec " + compteCourant4.intitule + " car nous ne pouvons pas créer de compte avec un solde négatif ...");
+        System.out.println("compteCourant numéro4 : " + compteCourant4.numero);
+        System.out.println("Solde du compte courant4  : " + compteCourant4.solde + "€");
+        assertEquals(4, compteCourant4.nbComptesCourants, "Ce n'est pas le bon nombre de compte courant");
+        compteCourant4.crediter(1000.0);
+        assertEquals(1000.0, compteCourant4.solde, "Le solde après avoir crédité " + compteCourant4.intitule + " n'est pas le bon.");
+        compteCourant4.debiter(500.0);
+        assertEquals(500, compteCourant4.solde, "Le solde après avoir débité " + compteCourant4.intitule + " n'est pas le bon.");
+        System.out.println(compteCourant4.toString());
     }
-
-
 }
