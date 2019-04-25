@@ -1,11 +1,43 @@
 package com.bankonet;
 
 public class CompteCourant {
-    String numero;
-    String intitule;
-    double solde;
-    double montantDecouvertAutorise;
-    static int nbComptesCourants = 0;
+    private String numero;
+    private String intitule;
+    private double solde;
+    private double montantDecouvertAutorise;
+    private static int nbComptesCourants = 0;
+
+    String getNumero() {
+        return numero;
+    }
+
+    void setNumero(String numero) {
+        this.numero = numero;
+    }
+
+    String getIntitule() {
+        return intitule;
+    }
+
+    void setIntitule(String intitule) {
+        this.intitule = intitule;
+    }
+
+    double getSolde() {
+        return solde;
+    }
+
+    double getMontantDecouvertAutorise() {
+        return montantDecouvertAutorise;
+    }
+
+    void setMontantDecouvertAutorise(double montantDecouvertAutorise) {
+        this.montantDecouvertAutorise = montantDecouvertAutorise;
+    }
+
+    static int getNbComptesCourants() {
+        return nbComptesCourants;
+    }
 
     public CompteCourant() {
         this.solde = 0.0;
@@ -38,12 +70,5 @@ public class CompteCourant {
         return "Le compte numéro : " + this.numero + " de " + this.intitule + " s'élève à un montant de : " + this.solde + "€ et ne doit pas dépasser un découvert de : " + this.montantDecouvertAutorise + "€";
     }
 
-//    public static CompteCourant checkInitCompteCourant(CompteCourant newCompteCourant) {
-//        if (newCompteCourant.solde < 0) {
-//            System.out.println("On ne peut pas créer de compte avec un solde négatif ...");
-//            newCompteCourant.solde = 0;
-//        }
-//        return newCompteCourant;
-//    }
 
 }
