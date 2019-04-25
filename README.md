@@ -27,3 +27,13 @@ _Initiation au **Java** lors de ma formation au **CESI**_
   - Constructor with Params 
   - Compte Init Condition
   - Visibilité
+   ## **Partie 6 & 7 :**
+  - Crediter 
+  - Debiter 
+  - Recap Bank account function => toString()
+  - Default Constructor 
+  - Constructor with Params 
+  - Compte Init Condition
+  - Visibilité
+  - Héritage
+  - Test

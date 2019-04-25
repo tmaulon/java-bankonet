@@ -1,6 +1,6 @@
 package com.bankonet;
 
-public class CompteCourant  extends Compte {
+public class CompteCourant  extends Compte implements ICompteStat {
     private double montantDecouvertAutorise;
     private static int nbComptesCourants = 0;
 

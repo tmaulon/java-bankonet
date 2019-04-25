@@ -1,3 +1,5 @@
 *.iml
 .idea
 out
+/src/com/bankonet/ICompteStat.java
+/src/test/com.bankonet/TestICompteStat.java

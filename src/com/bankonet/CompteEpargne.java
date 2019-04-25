@@ -1,6 +1,6 @@
 package com.bankonet;
 
-public class CompteEpargne extends Compte {
+public class CompteEpargne extends Compte implements ICompteStat {
     private double tauxInteret;
 
     public CompteEpargne(String numero, String intitule, double solde, double tauxInteret) {
