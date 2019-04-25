@@ -25,6 +25,6 @@ public class CompteCourant {
     }
 
     public String toString() {
-        return "Le compte numéro : " + this.numero + " de " + this.intitule + " s'élève à un montant de : " + this.solde + " et ne doit pas dépasser un découvert de : " + this.montantDecouvertAutorise;
+        return "Le compte numéro : " + this.numero + " de " + this.intitule + " s'élève à un montant de : " + this.solde + "€ et ne doit pas dépasser un découvert de : " + this.montantDecouvertAutorise + "€";
     }
 }
